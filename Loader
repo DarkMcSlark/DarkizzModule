@@ -1,15 +1,15 @@
 local Players = cloneref(game:GetService("Players"))
 local LocalPlayer = Players.LocalPlayer
 
-local Place_ID_With_Matching_Loadstring = {
+local Place_Id_To_Loadstring = {
     [13643807539] = "https://raw.githubusercontent.com/DarkMcSlark/ModuleGames/refs/heads/main/ExemptTeleportSB.lua?token=GHSAT0AAAAAADTQUBXDGU3K6YUHX3QG3ZZC2LZRXMQ";
     [14413475235] = "https://raw.githubusercontent.com/DarkMcSlark/ModuleGames/refs/heads/main/ExemptTeleportSB.lua?token=GHSAT0AAAAAADTQUBXDGU3K6YUHX3QG3ZZC2LZRXMQ";
 }
 
-if not Place_ID_With_Matching_Loadstring[game.PlaceId] then
+if not Place_Id_To_Loadstring[game.PlaceId] then
     LocalPlayer:Kick("Darkizz Module | This game is not supported!")
 end
 
-if Place_ID_With_Matching_Loadstring[game.PlaceId] then
+if Place_Id_To_Loadstring[game.PlaceId] then
     loadstring(game:HttpGet(Place_ID_With_Matching_Loadstring[game.PlaceId]))()
 end
