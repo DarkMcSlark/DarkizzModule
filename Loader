@@ -1,0 +1,19 @@
+local Players = cloneref(game:GetService("Players"))
+local LocalPlayer = Players.LocalPlayer
+
+local Place_ID_With_Matching_Loadstring = {
+    [13643807539] = "";
+    [14413475235] = "";
+}
+
+if not Place_ID_With_Matching_Loadstring[game.PlaceId] then
+    LocalPlayer:Kick("Darkizz Module | This game is not supported!")
+end
+
+if not getfenv().script_token() then
+    LocalPlayer:Kick("Darkizz Module | Script token not found!")
+end
+
+if Place_ID_With_Matching_Loadstring[game.PlaceId] then
+    loadstring(game:HttpGet(Place_ID_With_Matching_Loadstring[game.PlaceId]))()
+end
