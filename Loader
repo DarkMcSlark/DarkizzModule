@@ -10,7 +10,7 @@ if not Place_ID_With_Matching_Loadstring[game.PlaceId] then
     LocalPlayer:Kick("Darkizz Module | This game is not supported!")
 end
 
-if not getfenv().script_token() then
+if not getfenv().script_key() then
     LocalPlayer:Kick("Darkizz Module | Script token not found!")
 end
 
