@@ -2,7 +2,7 @@ local Players = cloneref(game:GetService("Players"))
 local LocalPlayer = Players.LocalPlayer
 
 local Place_Id_To_Loadstring = {
-    [72920620366355]
+    [72920620366355] = "https://raw.githubusercontent.com/DarkMcSlark/DarkizzModule/refs/heads/main/OperationOne.lua"
 }
 
 if not Place_Id_To_Loadstring[game.PlaceId] then
