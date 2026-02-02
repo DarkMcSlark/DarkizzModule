@@ -2,11 +2,11 @@ local Players = cloneref(game:GetService("Players"))
 local LocalPlayer = Players.LocalPlayer
 
 local Place_Id_To_Loadstring = {
-    [72920620366355] = "https://raw.githubusercontent.com/DarkMcSlark/DarkizzModule/refs/heads/main/OperationOne.lua"; -- // Operation One
+    [72920620366355] = "https://raw.githubusercontent.com/DarkMcSlark/SupportedGames/refs/heads/main/OperationOneV1.lua"; -- // Operation One
 }
 
 if not Place_Id_To_Loadstring[game.PlaceId] then
-    LocalPlayer:Kick("Darkizz Module | This game is not supported!")
+    LocalPlayer:Kick("Darkizz Softworks | This game is not supported!")
 end
 
 if Place_Id_To_Loadstring[game.PlaceId] then
