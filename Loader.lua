@@ -11,5 +11,5 @@ end
 
 if Place_Id_To_Loadstring[game.PlaceId] then
     Executed_From_Loader = "true";
-    loadstring(game:HttpGet(Place_ID_With_Matching_Loadstring[game.PlaceId]))()
+    loadstring(game:HttpGet(Place_Id_To_Loadstring[game.PlaceId]))()
 end
